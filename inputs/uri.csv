@@ -1,0 +1,22 @@
+uri;filename-extension;scope
+https://github.com/mermaid-js/mermaid.git;mmd;diagram
+https://github.com/jgraph/drawio-mcp.git;drawio;schema,mcp
+https://github.com/jgraph/drawio.git;drawio;diagram
+https://github.com/archimatetool/archi.git;archimate;architecture-modeling
+https://publications.opengroup.org/standards;-;architecture-modeling
+https://github.com/github/spec-kit.git;-;product-scenarios
+https://github.com/bmad-code-org/BMAD-METHOD.git;-;ai-driven-method
+https://github.com/Azure/Well-Architected-Reliability-Assessment.git;-;Well-Architected-Reliability-Assessment
+https://github.com/awslabs/mcp.git;-;mcp,aws
+https://github.com/HeroSizy/cucumberstudio-mcp.git;-;mcp-testing
+https://cucumber.io/docs/gherkin/;-;testing,mcp
+https://www.semanticscholar.org/;-;search semantic ai tools
+https://github.com/microsoft/vscode-extension-samples.git;-;vscode-plugin-dev
+https://kubernetes.io/docs/concepts/extend-kubernetes/operator/;-;kubernetes operator
+https://json-schema.org/;-;json-schema
+https://datahub.com/;-;data-management
+https://open-metadata.org/;-;data-management
+https://semver.org/;-;semantic versionning
+https://www.conventionalcommits.org/;-;conventional-commit
+https://github.com/kubernetes/api.git;-;kubernetes-api
+https://github.com/awslabs/diagram-as-code.git;yaml;aws diagram as code

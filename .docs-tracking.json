@@ -1,0 +1,132 @@
+{
+  "version": "1.0.0",
+  "last_generation": {
+    "commit_id": "43030d8",
+    "timestamp": "2026-02-15T05:53:59.650374",
+    "generator": "warp-ai",
+    "mappings": [
+      {
+        "inputs": [
+          "inputs/uri.csv"
+        ],
+        "outputs": [
+          "docs/tools-catalog.md"
+        ],
+        "description": "Generated comprehensive tool descriptions from URI catalog"
+      },
+      {
+        "inputs": [
+          "/tmp/test1.txt",
+          "/tmp/test2.txt"
+        ],
+        "outputs": [
+          "/tmp/out1.txt",
+          "/tmp/out2.txt"
+        ],
+        "description": "Multi-file test transformation",
+        "input_hashes": {
+          "/tmp/test1.txt": "634b027b1b69e1242d40d53e312b3b4ac7710f55be81f289b549446ef6778bee",
+          "/tmp/test2.txt": "7d6fd7774f0d87624da6dcf16d0d3d104c3191e771fbe2f39c86aed4b2bf1a0f"
+        },
+        "output_hashes": {
+          "/tmp/out1.txt": "737b4aa278e572abd3ad9ebb91c28adec199b847d95fb92202a8834ffffc13e7",
+          "/tmp/out2.txt": "6afa10e7869f456584911472fee2299e543bac95cd64a67462a160b9752481e2"
+        }
+      },
+      {
+        "inputs": [
+          "docs/tools-catalog.md"
+        ],
+        "outputs": [
+          "naming-and-standards/drawio-file-format-guide.md"
+        ],
+        "description": "Generated Draw.io file format guide from tools catalog sections 1.2 and 1.3 (Draw.io and Draw.io MCP Server)"
+      },
+      {
+        "inputs": [
+          "docs/tools-catalog.md"
+        ],
+        "outputs": [
+          "naming-and-standards/json-schema-guide.md"
+        ],
+        "description": "Generated JSON Schema specification guide from tools catalog section 10.1 (JSON Schema data validation)"
+      },
+      {
+        "inputs": [
+          "docs/tools-catalog.md"
+        ],
+        "outputs": [
+          "naming-and-standards/semver-guide.md",
+          "naming-and-standards/conventional-commits-guide.md"
+        ],
+        "description": "Generated Semantic Versioning and Conventional Commits guides from tools catalog sections 12.1 and 12.2 (Versioning and Release Management)"
+      },
+      {
+        "inputs": [
+          "inputs/deliverables.csv"
+        ],
+        "outputs": [
+          "docs/deliverables-catalog.md"
+        ],
+        "description": "Deliverables catalog generated from CSV",
+        "input_hashes": {
+          "inputs/deliverables.csv": "953d846ef80860261d734f4a40f70a2419ea34cf88694c1b325aa115491b3296"
+        },
+        "output_hashes": {
+          "docs/deliverables-catalog.md": "7ab4a1c853f3ccfd43096b34b6994665d956d630bed0fbe9d341de6b2be782b0"
+        }
+      }
+    ]
+  },
+  "history": [
+    {
+      "commit_id": "ad4712a",
+      "timestamp": "2026-02-14T20:16:27Z",
+      "version": "1.0.0",
+      "changes": [
+        "Initial tools catalog creation",
+        "Version tracking system implementation"
+      ]
+    },
+    {
+      "commit_id": "43030d8",
+      "timestamp": "2026-02-14T21:45:52.196951",
+      "version": "1.0.0",
+      "changes": [
+        "Added mapping: [/tmp/test1.txt, /tmp/test2.txt] -> [/tmp/out1.txt, /tmp/out2.txt]"
+      ]
+    },
+    {
+      "commit_id": "43030d8",
+      "timestamp": "2026-02-14T21:53:11.460237",
+      "version": "1.0.0",
+      "changes": [
+        "Added mapping: [docs/tools-catalog.md] -> [naming-and-standards/drawio-file-format-guide.md]"
+      ]
+    },
+    {
+      "commit_id": "43030d8",
+      "timestamp": "2026-02-14T21:57:46.143931",
+      "version": "1.0.0",
+      "changes": [
+        "Added mapping: [docs/tools-catalog.md] -> [naming-and-standards/json-schema-guide.md]"
+      ]
+    },
+    {
+      "commit_id": "43030d8",
+      "timestamp": "2026-02-14T22:02:44.268653",
+      "version": "1.0.0",
+      "changes": [
+        "Added mapping: [docs/tools-catalog.md] -> [naming-and-standards/semver-guide.md, naming-and-standards/conventional-commits-guide.md]"
+      ]
+    },
+    {
+      "commit_id": "43030d8",
+      "timestamp": "2026-02-15T05:53:59.650374",
+      "version": "1.0.0",
+      "changes": [
+        "Added mapping: [inputs/deliverables.csv] -> [docs/deliverables-catalog.md]"
+      ]
+    }
+  ]
+}

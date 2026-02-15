@@ -1,0 +1,50 @@
+repos:
+  # Standard pre-commit hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+
+  # Python formatting and linting
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.15
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  # Custom tracking validation hooks
+  - repo: local
+    hooks:
+      - id: validate-docs-tracking
+        name: Validate documentation tracking
+        entry: python scripts/validate_tracking.py
+        language: system
+        files: ^\.docs-tracking\.json$
+        pass_filenames: false
+
+      - id: check-docs-sync
+        name: Check documentation synchronization
+        entry: python scripts/check_docs_sync.py
+        language: system
+        files: ^(inputs/|docs/)
+        pass_filenames: false
+
+      - id: validate-json-schema
+        name: Validate JSON schema
+        entry: python -m jsonschema
+        language: system
+        files: ^schema/.*\.json$
+        pass_filenames: true
+
+# Global settings
+default_language_version:
+  python: python3.10
+
+fail_fast: false

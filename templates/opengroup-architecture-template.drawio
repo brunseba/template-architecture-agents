@@ -1,0 +1,648 @@
+<mxfile host="app.diagrams.net" modified="2026-02-15T05:00:00.000Z" agent="Warp AI" version="22.1.0" type="device">
+  <!-- ================================================================== -->
+  <!-- Sheet 1: Architecture Vision (TOGAF Phase A)                       -->
+  <!-- ================================================================== -->
+  <diagram id="phase-a-vision" name="1. Architecture Vision">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Title -->
+        <mxCell id="vision-title" value="&lt;b&gt;Architecture Vision - Phase A&lt;/b&gt;&lt;br&gt;TOGAF ADM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="420" y="20" width="330" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-container" value="&lt;b&gt;ArchiMate Color Legend&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="950" y="20" width="200" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-motivation" value="Motivation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCFF;strokeColor=#9673A6;" vertex="1" parent="legend-container">
+          <mxGeometry x="10" y="30" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-strategy" value="Strategy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="legend-container">
+          <mxGeometry x="100" y="30" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-business" value="Business" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="legend-container">
+          <mxGeometry x="10" y="60" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-application" value="Application" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="legend-container">
+          <mxGeometry x="100" y="60" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-technology" value="Technology" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="legend-container">
+          <mxGeometry x="10" y="90" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend-impl" value="Implementation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE0E0;strokeColor=#B85450;" vertex="1" parent="legend-container">
+          <mxGeometry x="100" y="90" width="80" height="25" as="geometry"/>
+        </mxCell>
+        
+        <!-- Stakeholder Map Section -->
+        <mxCell id="stakeholder-section" value="&lt;b&gt;Stakeholder Map&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="360" height="300" as="geometry"/>
+        </mxCell>
+        <mxCell id="stakeholder-exec" value="&lt;b&gt;Executive Sponsor&lt;/b&gt;&lt;br&gt;[Name]" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#CCCCFF;strokeColor=#9673A6;" vertex="1" parent="stakeholder-section">
+          <mxGeometry x="155" y="40" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="stakeholder-arch" value="&lt;b&gt;Enterprise Architect&lt;/b&gt;&lt;br&gt;[Name]" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="stakeholder-section">
+          <mxGeometry x="40" y="140" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="stakeholder-bus" value="&lt;b&gt;Business Owner&lt;/b&gt;&lt;br&gt;[Name]" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="stakeholder-section">
+          <mxGeometry x="155" y="140" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="stakeholder-tech" value="&lt;b&gt;Technical Lead&lt;/b&gt;&lt;br&gt;[Name]" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="stakeholder-section">
+          <mxGeometry x="270" y="140" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="stakeholder-user" value="&lt;b&gt;End Users&lt;/b&gt;&lt;br&gt;[Group]" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="stakeholder-section">
+          <mxGeometry x="155" y="230" width="30" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Drivers & Goals Section -->
+        <mxCell id="drivers-section" value="&lt;b&gt;Business Drivers &amp;amp; Goals&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#CCCCFF;strokeColor=#9673A6;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="500" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="driver-1" value="&lt;b&gt;Driver 1&lt;/b&gt;&lt;br&gt;[Description]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCCCFF;strokeColor=#9673A6;" vertex="1" parent="drivers-section">
+          <mxGeometry x="20" y="35" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="driver-2" value="&lt;b&gt;Driver 2&lt;/b&gt;&lt;br&gt;[Description]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCCCFF;strokeColor=#9673A6;" vertex="1" parent="drivers-section">
+          <mxGeometry x="180" y="35" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="driver-3" value="&lt;b&gt;Driver 3&lt;/b&gt;&lt;br&gt;[Description]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCCCFF;strokeColor=#9673A6;" vertex="1" parent="drivers-section">
+          <mxGeometry x="340" y="35" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="goal-1" value="&lt;b&gt;Goal 1&lt;/b&gt;&lt;br&gt;[Measurable outcome]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="drivers-section">
+          <mxGeometry x="20" y="100" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="goal-2" value="&lt;b&gt;Goal 2&lt;/b&gt;&lt;br&gt;[Measurable outcome]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="drivers-section">
+          <mxGeometry x="180" y="100" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="goal-3" value="&lt;b&gt;Goal 3&lt;/b&gt;&lt;br&gt;[Measurable outcome]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="drivers-section">
+          <mxGeometry x="340" y="100" width="140" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- Architecture Principles -->
+        <mxCell id="principles-section" value="&lt;b&gt;Architecture Principles&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#F5DEAA;strokeColor=#D6B656;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="260" width="500" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="principle-1" value="&lt;b&gt;Principle 1&lt;/b&gt;&lt;br&gt;[Statement]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="principles-section">
+          <mxGeometry x="20" y="35" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="principle-2" value="&lt;b&gt;Principle 2&lt;/b&gt;&lt;br&gt;[Statement]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="principles-section">
+          <mxGeometry x="180" y="35" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="principle-3" value="&lt;b&gt;Principle 3&lt;/b&gt;&lt;br&gt;[Statement]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="principles-section">
+          <mxGeometry x="340" y="35" width="140" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Scope Definition -->
+        <mxCell id="scope-section" value="&lt;b&gt;Architecture Scope&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#f5f5f5;strokeColor=#666666;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="880" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope-in" value="&lt;b&gt;In Scope&lt;/b&gt;&lt;hr&gt;• [Capability 1]&lt;br&gt;• [Capability 2]&lt;br&gt;• [System 1]&lt;br&gt;• [Process 1]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacingLeft=10;" vertex="1" parent="scope-section">
+          <mxGeometry x="20" y="35" width="260" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope-out" value="&lt;b&gt;Out of Scope&lt;/b&gt;&lt;hr&gt;• [Excluded item 1]&lt;br&gt;• [Excluded item 2]&lt;br&gt;• [Excluded system]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;verticalAlign=top;spacingLeft=10;" vertex="1" parent="scope-section">
+          <mxGeometry x="300" y="35" width="260" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope-constraints" value="&lt;b&gt;Constraints&lt;/b&gt;&lt;hr&gt;• [Constraint 1]&lt;br&gt;• [Constraint 2]&lt;br&gt;• [Timeline]&lt;br&gt;• [Budget]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacingLeft=10;" vertex="1" parent="scope-section">
+          <mxGeometry x="580" y="35" width="280" height="130" as="geometry"/>
+        </mxCell>
+        
+        <!-- Version Info -->
+        <mxCell id="version-info" value="Version: 1.0 | Date: [YYYY-MM-DD] | Author: [Name] | Status: Draft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="400" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  
+  <!-- ================================================================== -->
+  <!-- Sheet 2: Business Architecture (TOGAF Phase B)                     -->
+  <!-- ================================================================== -->
+  <diagram id="phase-b-business" name="2. Business Architecture">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Title -->
+        <mxCell id="bus-title" value="&lt;b&gt;Business Architecture - Phase B&lt;/b&gt;&lt;br&gt;TOGAF ADM / ArchiMate Business Layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="380" y="20" width="400" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Business Services -->
+        <mxCell id="bus-services" value="&lt;b&gt;Business Services&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#FFFFB5;strokeColor=#D6B656;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="520" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="bs-1" value="&lt;b&gt;Business Service 1&lt;/b&gt;&lt;br&gt;[Description]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-services">
+          <mxGeometry x="20" y="35" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="bs-2" value="&lt;b&gt;Business Service 2&lt;/b&gt;&lt;br&gt;[Description]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-services">
+          <mxGeometry x="185" y="35" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="bs-3" value="&lt;b&gt;Business Service 3&lt;/b&gt;&lt;br&gt;[Description]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-services">
+          <mxGeometry x="350" y="35" width="150" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Business Actors -->
+        <mxCell id="bus-actors" value="&lt;b&gt;Business Actors&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#FFFFB5;strokeColor=#D6B656;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="80" width="300" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="actor-1" value="&lt;b&gt;Customer&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-actors">
+          <mxGeometry x="40" y="35" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="actor-2" value="&lt;b&gt;Employee&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-actors">
+          <mxGeometry x="130" y="35" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="actor-3" value="&lt;b&gt;Partner&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-actors">
+          <mxGeometry x="220" y="35" width="30" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Business Process -->
+        <mxCell id="bus-process" value="&lt;b&gt;Core Business Process&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#FFFFB5;strokeColor=#D6B656;rounded=1;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="840" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="bp-start" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="bus-process">
+          <mxGeometry x="20" y="75" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="bp-1" value="&lt;b&gt;Step 1&lt;/b&gt;&lt;br&gt;[Activity]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-process">
+          <mxGeometry x="80" y="55" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="bp-2" value="&lt;b&gt;Step 2&lt;/b&gt;&lt;br&gt;[Activity]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-process">
+          <mxGeometry x="240" y="55" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="bp-decision" value="Decision?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="bus-process">
+          <mxGeometry x="400" y="50" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="bp-3" value="&lt;b&gt;Step 3a&lt;/b&gt;&lt;br&gt;[Activity]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-process">
+          <mxGeometry x="520" y="35" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="bp-4" value="&lt;b&gt;Step 3b&lt;/b&gt;&lt;br&gt;[Activity]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-process">
+          <mxGeometry x="520" y="95" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="bp-5" value="&lt;b&gt;Step 4&lt;/b&gt;&lt;br&gt;[Activity]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-process">
+          <mxGeometry x="680" y="55" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="bp-end" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;strokeWidth=3;" vertex="1" parent="bus-process">
+          <mxGeometry x="800" y="75" width="30" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- Process Flow Arrows -->
+        <mxCell id="flow-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bus-process" source="bp-start" target="bp-1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="flow-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bus-process" source="bp-1" target="bp-2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="flow-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bus-process" source="bp-2" target="bp-decision">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="flow-4a" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bus-process" source="bp-decision" target="bp-3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="flow-4b" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bus-process" source="bp-decision" target="bp-4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="flow-5a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bus-process" source="bp-3" target="bp-5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="flow-5b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bus-process" source="bp-4" target="bp-5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Business Objects -->
+        <mxCell id="bus-objects" value="&lt;b&gt;Business Objects&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#FFFFB5;strokeColor=#D6B656;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="400" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="bo-1" value="&lt;b&gt;Business Object 1&lt;/b&gt;&lt;br&gt;[e.g., Order, Contract]" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-objects">
+          <mxGeometry x="20" y="40" width="110" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="bo-2" value="&lt;b&gt;Business Object 2&lt;/b&gt;&lt;br&gt;[e.g., Customer, Product]" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-objects">
+          <mxGeometry x="145" y="40" width="110" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="bo-3" value="&lt;b&gt;Business Object 3&lt;/b&gt;&lt;br&gt;[e.g., Invoice]" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="bus-objects">
+          <mxGeometry x="270" y="40" width="110" height="80" as="geometry"/>
+        </mxCell>
+        
+        <!-- Capability Map -->
+        <mxCell id="capability-map" value="&lt;b&gt;Business Capability Map&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#F5DEAA;strokeColor=#D6B656;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="420" width="420" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="cap-1" value="&lt;b&gt;Capability 1&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="capability-map">
+          <mxGeometry x="20" y="35" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="cap-2" value="&lt;b&gt;Capability 2&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="capability-map">
+          <mxGeometry x="120" y="35" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="cap-3" value="&lt;b&gt;Capability 3&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="capability-map">
+          <mxGeometry x="220" y="35" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="cap-4" value="&lt;b&gt;Capability 4&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5DEAA;strokeColor=#D6B656;" vertex="1" parent="capability-map">
+          <mxGeometry x="320" y="35" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="cap-5" value="Sub-cap 1.1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="capability-map">
+          <mxGeometry x="20" y="85" width="90" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="cap-6" value="Sub-cap 2.1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="capability-map">
+          <mxGeometry x="120" y="85" width="90" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="cap-7" value="Sub-cap 3.1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="capability-map">
+          <mxGeometry x="220" y="85" width="90" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="cap-8" value="Sub-cap 4.1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="capability-map">
+          <mxGeometry x="320" y="85" width="90" height="30" as="geometry"/>
+        </mxCell>
+        
+        <!-- Version Info -->
+        <mxCell id="bus-version" value="Version: 1.0 | Date: [YYYY-MM-DD] | Author: [Name] | Status: Draft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="40" y="580" width="400" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  
+  <!-- ================================================================== -->
+  <!-- Sheet 3: Application Architecture (TOGAF Phase C)                  -->
+  <!-- ================================================================== -->
+  <diagram id="phase-c-application" name="3. Application Architecture">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Title -->
+        <mxCell id="app-title" value="&lt;b&gt;Application Architecture - Phase C&lt;/b&gt;&lt;br&gt;TOGAF ADM / ArchiMate Application Layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="380" y="20" width="400" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Application Services -->
+        <mxCell id="app-services" value="&lt;b&gt;Application Services&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#B5FFFF;strokeColor=#82B366;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="840" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="as-1" value="&lt;b&gt;Service 1&lt;/b&gt;&lt;br&gt;[API/Interface]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="app-services">
+          <mxGeometry x="20" y="35" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="as-2" value="&lt;b&gt;Service 2&lt;/b&gt;&lt;br&gt;[API/Interface]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="app-services">
+          <mxGeometry x="160" y="35" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="as-3" value="&lt;b&gt;Service 3&lt;/b&gt;&lt;br&gt;[API/Interface]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="app-services">
+          <mxGeometry x="300" y="35" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="as-4" value="&lt;b&gt;Service 4&lt;/b&gt;&lt;br&gt;[API/Interface]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="app-services">
+          <mxGeometry x="440" y="35" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="as-5" value="&lt;b&gt;Service 5&lt;/b&gt;&lt;br&gt;[API/Interface]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="app-services">
+          <mxGeometry x="580" y="35" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="as-6" value="&lt;b&gt;Service 6&lt;/b&gt;&lt;br&gt;[API/Interface]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="app-services">
+          <mxGeometry x="710" y="35" width="120" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- Application Components -->
+        <mxCell id="app-components" value="&lt;b&gt;Application Components&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#B5FFFF;strokeColor=#82B366;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="840" height="200" as="geometry"/>
+        </mxCell>
+        
+        <!-- Frontend Tier -->
+        <mxCell id="tier-frontend" value="&lt;b&gt;Presentation Tier&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=20;fillColor=#E6FFFF;strokeColor=#82B366;horizontal=1;" vertex="1" parent="app-components">
+          <mxGeometry x="20" y="35" width="240" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac-web" value="&lt;b&gt;Web App&lt;/b&gt;&lt;br&gt;[React/Angular]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="tier-frontend">
+          <mxGeometry x="15" y="35" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac-mobile" value="&lt;b&gt;Mobile App&lt;/b&gt;&lt;br&gt;[iOS/Android]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="tier-frontend">
+          <mxGeometry x="125" y="35" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac-portal" value="&lt;b&gt;Admin Portal&lt;/b&gt;&lt;br&gt;[Internal]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="tier-frontend">
+          <mxGeometry x="70" y="95" width="100" height="45" as="geometry"/>
+        </mxCell>
+        
+        <!-- Backend Tier -->
+        <mxCell id="tier-backend" value="&lt;b&gt;Application Tier&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=20;fillColor=#E6FFFF;strokeColor=#82B366;horizontal=1;" vertex="1" parent="app-components">
+          <mxGeometry x="280" y="35" width="280" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac-api" value="&lt;b&gt;API Gateway&lt;/b&gt;&lt;br&gt;[Kong/AWS]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="tier-backend">
+          <mxGeometry x="90" y="30" width="100" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac-svc1" value="&lt;b&gt;Service A&lt;/b&gt;&lt;br&gt;[Microservice]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="tier-backend">
+          <mxGeometry x="15" y="90" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac-svc2" value="&lt;b&gt;Service B&lt;/b&gt;&lt;br&gt;[Microservice]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="tier-backend">
+          <mxGeometry x="100" y="90" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac-svc3" value="&lt;b&gt;Service C&lt;/b&gt;&lt;br&gt;[Microservice]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="tier-backend">
+          <mxGeometry x="185" y="90" width="80" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- Integration Tier -->
+        <mxCell id="tier-integration" value="&lt;b&gt;Integration Tier&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=20;fillColor=#E6FFFF;strokeColor=#82B366;horizontal=1;" vertex="1" parent="app-components">
+          <mxGeometry x="580" y="35" width="240" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac-mq" value="&lt;b&gt;Message Queue&lt;/b&gt;&lt;br&gt;[Kafka/RabbitMQ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="tier-integration">
+          <mxGeometry x="70" y="30" width="100" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac-etl" value="&lt;b&gt;ETL/Integration&lt;/b&gt;&lt;br&gt;[Airflow]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="tier-integration">
+          <mxGeometry x="20" y="90" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac-ext" value="&lt;b&gt;External APIs&lt;/b&gt;&lt;br&gt;[3rd Party]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="tier-integration">
+          <mxGeometry x="130" y="90" width="90" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- Application Collaboration -->
+        <mxCell id="app-collaboration" value="&lt;b&gt;Application Collaboration&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#B5FFFF;strokeColor=#82B366;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="840" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="collab-note" value="&lt;i&gt;Define application interactions, data flows, and integration patterns&lt;/i&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="app-collaboration">
+          <mxGeometry x="20" y="30" width="800" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="collab-app1" value="&lt;b&gt;App A&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="app-collaboration">
+          <mxGeometry x="40" y="70" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="collab-app2" value="&lt;b&gt;App B&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="app-collaboration">
+          <mxGeometry x="260" y="70" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="collab-app3" value="&lt;b&gt;App C&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="app-collaboration">
+          <mxGeometry x="480" y="70" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="collab-app4" value="&lt;b&gt;External&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="app-collaboration">
+          <mxGeometry x="700" y="70" width="100" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="collab-flow1" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82B366;" edge="1" parent="app-collaboration" source="collab-app1" target="collab-app2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="collab-flow2" value="Event" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82B366;dashed=1;" edge="1" parent="app-collaboration" source="collab-app2" target="collab-app3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="collab-flow3" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" edge="1" parent="app-collaboration" source="collab-app3" target="collab-app4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Version Info -->
+        <mxCell id="app-version" value="Version: 1.0 | Date: [YYYY-MM-DD] | Author: [Name] | Status: Draft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="400" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  
+  <!-- ================================================================== -->
+  <!-- Sheet 4: Data Architecture (TOGAF Phase C - Data)                  -->
+  <!-- ================================================================== -->
+  <diagram id="phase-c-data" name="4. Data Architecture">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Title -->
+        <mxCell id="data-title" value="&lt;b&gt;Data Architecture - Phase C (Data)&lt;/b&gt;&lt;br&gt;TOGAF ADM / ArchiMate Data Aspects" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="380" y="20" width="400" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Data Entities -->
+        <mxCell id="data-entities" value="&lt;b&gt;Core Data Entities&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#B5FFFF;strokeColor=#82B366;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="840" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity-1" value="&lt;b&gt;Entity 1&lt;/b&gt;&lt;hr&gt;• attribute1: type&lt;br&gt;• attribute2: type&lt;br&gt;• attribute3: type" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;align=left;verticalAlign=top;spacingLeft=5;" vertex="1" parent="data-entities">
+          <mxGeometry x="20" y="35" width="150" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity-2" value="&lt;b&gt;Entity 2&lt;/b&gt;&lt;hr&gt;• attribute1: type&lt;br&gt;• attribute2: type&lt;br&gt;• attribute3: type" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;align=left;verticalAlign=top;spacingLeft=5;" vertex="1" parent="data-entities">
+          <mxGeometry x="190" y="35" width="150" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity-3" value="&lt;b&gt;Entity 3&lt;/b&gt;&lt;hr&gt;• attribute1: type&lt;br&gt;• attribute2: type&lt;br&gt;• attribute3: type" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;align=left;verticalAlign=top;spacingLeft=5;" vertex="1" parent="data-entities">
+          <mxGeometry x="360" y="35" width="150" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity-4" value="&lt;b&gt;Entity 4&lt;/b&gt;&lt;hr&gt;• attribute1: type&lt;br&gt;• attribute2: type&lt;br&gt;• attribute3: type" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;align=left;verticalAlign=top;spacingLeft=5;" vertex="1" parent="data-entities">
+          <mxGeometry x="530" y="35" width="150" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="entity-5" value="&lt;b&gt;Entity 5&lt;/b&gt;&lt;hr&gt;• attribute1: type&lt;br&gt;• attribute2: type&lt;br&gt;• attribute3: type" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;align=left;verticalAlign=top;spacingLeft=5;" vertex="1" parent="data-entities">
+          <mxGeometry x="700" y="35" width="120" height="110" as="geometry"/>
+        </mxCell>
+        
+        <!-- Entity Relationships -->
+        <mxCell id="rel-1-2" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82B366;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="data-entities" source="entity-1" target="entity-2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="rel-2-3" value="N:M" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82B366;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="data-entities" source="entity-2" target="entity-3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="rel-3-4" value="1:1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82B366;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="data-entities" source="entity-3" target="entity-4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Data Flow Diagram -->
+        <mxCell id="data-flow" value="&lt;b&gt;Data Flow Diagram&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#B5FFFF;strokeColor=#82B366;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="840" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="df-source1" value="&lt;b&gt;Source System 1&lt;/b&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="data-flow">
+          <mxGeometry x="30" y="50" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="df-source2" value="&lt;b&gt;Source System 2&lt;/b&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="data-flow">
+          <mxGeometry x="30" y="140" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="df-etl" value="&lt;b&gt;ETL / Data Pipeline&lt;/b&gt;&lt;br&gt;[Transform &amp;amp; Load]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="data-flow">
+          <mxGeometry x="200" y="60" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="df-warehouse" value="&lt;b&gt;Data Warehouse&lt;/b&gt;&lt;br&gt;[Central Repository]" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="data-flow">
+          <mxGeometry x="400" y="45" width="120" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="df-mart1" value="&lt;b&gt;Data Mart 1&lt;/b&gt;&lt;br&gt;[Sales]" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="data-flow">
+          <mxGeometry x="600" y="35" width="80" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="df-mart2" value="&lt;b&gt;Data Mart 2&lt;/b&gt;&lt;br&gt;[Finance]" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="data-flow">
+          <mxGeometry x="600" y="105" width="80" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="df-bi" value="&lt;b&gt;BI / Analytics&lt;/b&gt;&lt;br&gt;[Reporting]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="data-flow">
+          <mxGeometry x="740" y="60" width="80" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Data Flow Arrows -->
+        <mxCell id="dflow-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" edge="1" parent="data-flow" source="df-source1" target="df-etl">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="dflow-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;" edge="1" parent="data-flow" source="df-source2" target="df-etl">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="dflow-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82B366;" edge="1" parent="data-flow" source="df-etl" target="df-warehouse">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="dflow-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82B366;" edge="1" parent="data-flow" source="df-warehouse" target="df-mart1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="dflow-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82B366;" edge="1" parent="data-flow" source="df-warehouse" target="df-mart2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="dflow-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D6B656;" edge="1" parent="data-flow" source="df-mart1" target="df-bi">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="dflow-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D6B656;" edge="1" parent="data-flow" source="df-mart2" target="df-bi">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Data Governance -->
+        <mxCell id="data-governance" value="&lt;b&gt;Data Governance &amp;amp; Quality&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#f5f5f5;strokeColor=#666666;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="460" width="840" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="dg-owner" value="&lt;b&gt;Data Owner&lt;/b&gt;&lt;br&gt;[Role/Person]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="data-governance">
+          <mxGeometry x="20" y="35" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="dg-steward" value="&lt;b&gt;Data Steward&lt;/b&gt;&lt;br&gt;[Role/Person]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFB5;strokeColor=#D6B656;" vertex="1" parent="data-governance">
+          <mxGeometry x="160" y="35" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="dg-quality" value="&lt;b&gt;Quality Rules&lt;/b&gt;&lt;hr&gt;• Completeness&lt;br&gt;• Accuracy&lt;br&gt;• Timeliness" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacingLeft=5;" vertex="1" parent="data-governance">
+          <mxGeometry x="300" y="35" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="dg-security" value="&lt;b&gt;Security Classification&lt;/b&gt;&lt;hr&gt;• Public&lt;br&gt;• Internal&lt;br&gt;• Confidential" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;verticalAlign=top;spacingLeft=5;" vertex="1" parent="data-governance">
+          <mxGeometry x="440" y="35" width="130" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="dg-retention" value="&lt;b&gt;Retention Policy&lt;/b&gt;&lt;hr&gt;• Hot: 30 days&lt;br&gt;• Warm: 1 year&lt;br&gt;• Cold: 7 years" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacingLeft=5;" vertex="1" parent="data-governance">
+          <mxGeometry x="590" y="35" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="dg-catalog" value="&lt;b&gt;Data Catalog&lt;/b&gt;&lt;br&gt;[DataHub/OpenMetadata]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5FFFF;strokeColor=#82B366;" vertex="1" parent="data-governance">
+          <mxGeometry x="730" y="35" width="90" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Version Info -->
+        <mxCell id="data-version" value="Version: 1.0 | Date: [YYYY-MM-DD] | Author: [Name] | Status: Draft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="400" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  
+  <!-- ================================================================== -->
+  <!-- Sheet 5: Technology Architecture (TOGAF Phase D)                   -->
+  <!-- ================================================================== -->
+  <diagram id="phase-d-technology" name="5. Technology Architecture">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Title -->
+        <mxCell id="tech-title" value="&lt;b&gt;Technology Architecture - Phase D&lt;/b&gt;&lt;br&gt;TOGAF ADM / ArchiMate Technology Layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="380" y="20" width="400" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Cloud Infrastructure -->
+        <mxCell id="cloud-infra" value="&lt;b&gt;Cloud Infrastructure&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#C9E7B7;strokeColor=#82B366;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="840" height="240" as="geometry"/>
+        </mxCell>
+        
+        <!-- VPC / Network -->
+        <mxCell id="vpc" value="&lt;b&gt;VPC / Virtual Network&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=20;fillColor=#E8F5E9;strokeColor=#82B366;dashed=1;rounded=1;" vertex="1" parent="cloud-infra">
+          <mxGeometry x="20" y="35" width="800" height="190" as="geometry"/>
+        </mxCell>
+        
+        <!-- Public Subnet -->
+        <mxCell id="subnet-public" value="&lt;b&gt;Public Subnet&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=18;fillColor=#dcedc8;strokeColor=#82B366;rounded=1;" vertex="1" parent="vpc">
+          <mxGeometry x="15" y="30" width="250" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="lb" value="&lt;b&gt;Load Balancer&lt;/b&gt;&lt;br&gt;[ALB/NLB]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="subnet-public">
+          <mxGeometry x="20" y="30" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="bastion" value="&lt;b&gt;Bastion&lt;/b&gt;&lt;br&gt;[Jump Host]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="subnet-public">
+          <mxGeometry x="135" y="30" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="nat" value="&lt;b&gt;NAT Gateway&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="subnet-public">
+          <mxGeometry x="75" y="90" width="100" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Private Subnet -->
+        <mxCell id="subnet-private" value="&lt;b&gt;Private Subnet&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=18;fillColor=#c8e6c9;strokeColor=#82B366;rounded=1;" vertex="1" parent="vpc">
+          <mxGeometry x="280" y="30" width="260" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="k8s-cluster" value="&lt;b&gt;Kubernetes Cluster&lt;/b&gt;&lt;br&gt;[EKS/AKS/GKE]" style="swimlane;whiteSpace=wrap;html=1;startSize=35;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="subnet-private">
+          <mxGeometry x="15" y="25" width="230" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="node-1" value="Node 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;fontSize=10;" vertex="1" parent="k8s-cluster">
+          <mxGeometry x="10" y="45" width="65" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="node-2" value="Node 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;fontSize=10;" vertex="1" parent="k8s-cluster">
+          <mxGeometry x="80" y="45" width="65" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="node-3" value="Node 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;fontSize=10;" vertex="1" parent="k8s-cluster">
+          <mxGeometry x="150" y="45" width="65" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="pod-info" value="Pods: [N] | Services: [M]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#666666;" vertex="1" parent="k8s-cluster">
+          <mxGeometry x="10" y="85" width="210" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- Data Subnet -->
+        <mxCell id="subnet-data" value="&lt;b&gt;Data Subnet&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=18;fillColor=#a5d6a7;strokeColor=#82B366;rounded=1;" vertex="1" parent="vpc">
+          <mxGeometry x="555" y="30" width="230" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="db-primary" value="&lt;b&gt;DB Primary&lt;/b&gt;&lt;br&gt;[RDS/CloudSQL]" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="subnet-data">
+          <mxGeometry x="20" y="30" width="90" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="db-replica" value="&lt;b&gt;DB Replica&lt;/b&gt;&lt;br&gt;[Read Replica]" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="subnet-data">
+          <mxGeometry x="125" y="30" width="90" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="cache" value="&lt;b&gt;Cache&lt;/b&gt;&lt;br&gt;[Redis/Memcached]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="subnet-data">
+          <mxGeometry x="70" y="100" width="100" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Platform Services -->
+        <mxCell id="platform-services" value="&lt;b&gt;Platform Services&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#C9E7B7;strokeColor=#82B366;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="340" width="840" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="ps-ci" value="&lt;b&gt;CI/CD&lt;/b&gt;&lt;br&gt;[GitHub Actions]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="platform-services">
+          <mxGeometry x="20" y="35" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ps-registry" value="&lt;b&gt;Container Registry&lt;/b&gt;&lt;br&gt;[ECR/ACR/GCR]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="platform-services">
+          <mxGeometry x="140" y="35" width="110" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ps-secrets" value="&lt;b&gt;Secrets Manager&lt;/b&gt;&lt;br&gt;[Vault/AWS SM]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="platform-services">
+          <mxGeometry x="270" y="35" width="110" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ps-monitoring" value="&lt;b&gt;Monitoring&lt;/b&gt;&lt;br&gt;[Prometheus/Grafana]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="platform-services">
+          <mxGeometry x="400" y="35" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ps-logging" value="&lt;b&gt;Logging&lt;/b&gt;&lt;br&gt;[ELK/CloudWatch]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="platform-services">
+          <mxGeometry x="540" y="35" width="110" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="ps-iac" value="&lt;b&gt;IaC&lt;/b&gt;&lt;br&gt;[Terraform/Pulumi]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C9E7B7;strokeColor=#82B366;" vertex="1" parent="platform-services">
+          <mxGeometry x="670" y="35" width="110" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- Security & Compliance -->
+        <mxCell id="security" value="&lt;b&gt;Security &amp;amp; Compliance&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="460" width="400" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec-iam" value="&lt;b&gt;IAM&lt;/b&gt;&lt;br&gt;[Identity &amp;amp; Access]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="security">
+          <mxGeometry x="20" y="35" width="90" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec-waf" value="&lt;b&gt;WAF&lt;/b&gt;&lt;br&gt;[Web Firewall]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="security">
+          <mxGeometry x="120" y="35" width="80" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec-encrypt" value="&lt;b&gt;Encryption&lt;/b&gt;&lt;br&gt;[KMS/TLS]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="security">
+          <mxGeometry x="210" y="35" width="80" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec-scan" value="&lt;b&gt;Security Scan&lt;/b&gt;&lt;br&gt;[Trivy/Snyk]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="security">
+          <mxGeometry x="300" y="35" width="85" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- DR & Backup -->
+        <mxCell id="dr-backup" value="&lt;b&gt;DR &amp;amp; Backup&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="460" width="420" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="dr-rto" value="&lt;b&gt;RTO&lt;/b&gt;&lt;br&gt;[X hours]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="dr-backup">
+          <mxGeometry x="20" y="35" width="80" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="dr-rpo" value="&lt;b&gt;RPO&lt;/b&gt;&lt;br&gt;[Y hours]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="dr-backup">
+          <mxGeometry x="110" y="35" width="80" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="dr-backup-svc" value="&lt;b&gt;Backup Strategy&lt;/b&gt;&lt;br&gt;[Daily/Weekly]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="dr-backup">
+          <mxGeometry x="200" y="35" width="100" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="dr-region" value="&lt;b&gt;DR Region&lt;/b&gt;&lt;br&gt;[Secondary Site]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="dr-backup">
+          <mxGeometry x="310" y="35" width="95" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- Version Info -->
+        <mxCell id="tech-version" value="Version: 1.0 | Date: [YYYY-MM-DD] | Author: [Name] | Status: Draft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="400" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

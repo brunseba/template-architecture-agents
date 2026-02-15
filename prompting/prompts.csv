@@ -1,0 +1,3 @@
+prompt;scope;when
+create one chapter description for any tools list in inputs/uri.csv;valorize inputs material;new line/update line in inputs/uri.csv
+use git to track change and store commit id to align inputs and docs folder;versionning;

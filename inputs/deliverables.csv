@@ -1,0 +1,14 @@
+id;deliverable-name;description;category;output-format;source-input
+1;drawio-opengroup;A Draw.io template with multiple sheets for design/architecture based on OpenGroup architecture standards;architecture;drawio;uri.csv#opengroup
+2;xlsx-opengroup;An Excel file with multiple sheets for requirements management based on OpenGroup architecture standards;architecture;xlsx;uri.csv#opengroup
+3;mermaid-templates;Architecture diagram templates in Mermaid syntax for flowcharts, sequences, and C4 models;architecture;mmd;uri.csv#mermaid
+4;archi-templates;ArchiMate model templates for enterprise architecture modeling;architecture;archimate;uri.csv#archi
+5;aws-diagrams;AWS architecture diagrams as code using YAML definitions;architecture;yaml;uri.csv#aws-diagram-as-code
+6;gherkin-templates;Gherkin feature file templates for BDD testing scenarios;testing;feature;uri.csv#gherkin
+7;test-scenarios;Product test scenarios catalog based on Spec Kit methodology;testing;md;uri.csv#spec-kit
+8;tools-catalog;Generated tools catalog documentation from URI references;documentation;md;uri.csv
+9;api-schemas;JSON Schema definitions for API validation and documentation;documentation;json;uri.csv#json-schema
+10;datahub-config;DataHub metadata configuration templates for data catalog setup;data-management;yaml;uri.csv#datahub
+11;openmetadata-config;OpenMetadata setup templates for metadata management;data-management;yaml;uri.csv#openmetadata
+12;k8s-operator-templates;Kubernetes operator scaffolding with CRD definitions;devops;yaml;uri.csv#k8s-operator
+13;conventional-commit-config;Pre-commit hooks and changelog configuration for conventional commits;devops;yaml;uri.csv#conventional-commits
