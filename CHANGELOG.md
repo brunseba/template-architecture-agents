@@ -26,4 +26,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Recommended tool combinations for common workflows
 - Version tracking system (VERSION file and metadata in documentation)
 
-[1.0.0]: https://github.com/yourusername/template-architecture-agents/releases/tag/v1.0.0
+[1.0.0]: https://github.com/brunseba/template-architecture-agents/releases/tag/v1.0.0
